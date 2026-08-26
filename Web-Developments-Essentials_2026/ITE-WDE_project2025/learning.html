@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journey - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section for Learning Page -->
+        <section class="hero">
+            <div class="profile-container">
+                <h1> My Learning Journey in HTML & CSS</h1>
+                <p class="title">Documenting my growth in doing <br> HTML and CSS coding</p>
+            </div>
+        </section>
+
+        <!-- Learning Timeline -->
+        <section class="learning-section">
+            <div class="section-header">
+                <h2>How was I introduced to HTML and CSS? </h2>
+                <p>My Learning progression through HTML and CSS</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">08/10/2025 - 17/10/2025</div>
+                    <div class="timeline-content">
+                        <h3>HTML Basics</h3>
+                        <p>I learned the basics and the structure of HTML.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Basic HTML</span>
+                            <span class="tech-tag">Document Structure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">21/10/2025 - 29/10/2025</div>
+                    <div class="timeline-content">
+                        <h3>CSS Basics</h3>
+                        <p>I learned the basics of CSS and differentiate the different types of CSS. Some things that I have picked up from CSS such as styling of the picture to make it look organised and changing the font-style to make it fun.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">CSS Basics</span>
+                            <span class="tech-tag">Styling</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">29/10/2025 - 5/11/2025</div>
+                    <div class="timeline-content">
+                        <h3>Class & ids and &lt;div&gt; tag (HTML)</h3>
+                        <p>I learn how to use class (.) and ids (#) selectors, together with &lt;div&gt; tag and know their use of purpose.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">class (.)</span>
+                            <span class="tech-tag">id (.)</span>
+                            <span class="tech-tag">&lt;div&gt; tags</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">7/11/2025 - 26/11/2025</div>
+                    <div class="timeline-content">
+                        <h3>Building my Portfolio Website</h3>
+                        <p>Applied my learning concepts of HTML and CSS to build my portfolio website as a school project.<br><br>I was able to leverage my use on one of the Gen AI tools: Deepseek, to assist me in creating a template with the consistent colors and stylings across all my pages and help me to organise my HTML and CSS codes for my portfolio website.</p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Consistent colors and themes for CSS</span>
+                            <span class="tech-tag">Code Organization</span>
+                            <span class="tech-tag">Gen-AI tool Assistance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Examples Section -->
+        <section class="code-section">
+            <div class="section-header">
+                <h2>Code Examples & Learnings</h2>
+                <p>Key HTML/CSS concepts I've mastered during this project</p>
+            </div>
+
+            <div class="code-grid">
+                <!-- Example 1 -->
+                <div class="code-card">
+                    <h3>Timeline Layout in CSS</h3>
+                    <div class="code-container">
+                        <pre><code>.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    justify-content: flex-start;
+    padding-right: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-end;
+    padding-left: 50%;
+}</code></pre>
+                    </div>
+                    <div class="code-explanation">
+                        <p><strong>Purpose:</strong> To show milestones as documentation of our learning from this project.</p>
+                        <p><strong>Rationale:</strong> By putting timeline in a chronological order, provides a clear overview of our learning.</p>
+                        <strong>What I've learnt:</strong>
+                        <ul>
+                            <li>CSS timeline can create informative chronological displays</li>
+                            <li>Alternate left and right of timeline items using :nth-child() selectors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div class="code-card">
+                    <h3>CSS Flexbox Layout</h3>
+                    <div class="code-container">
+                        <pre><code>.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}</code></pre>
+                    </div>
+                    <div class="code-explanation">
+                        <p><strong>Purpose:</strong> To create responsive grid layout for project cards.</p>
+                        <p><strong>Rationale:</strong> By using Flexbox wisely, provides flexible alignment and distribution.</p>
+                        <strong>What I've learnt:</strong>
+                        <ul>
+                            <li>CSS Flexbox is a layout model that helps designing flexible and responsive layout structures without using float or positioning.</li>
+                            <li>Flexbox is supported by all modern browsers, making alignment in complex layout possible.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Example 3 -->
+                <div class="code-card">
+                    <h3>CSS Gradient Backgrounds</h3>
+                    <div class="code-container">
+                        <pre><code>.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}</code></pre>
+                    </div>
+                    <div class="code-explanation">
+                        <p><strong>Purpose:</strong> To create a visually appealing hero section.</p>
+                        <p><strong>Rationale:</strong> By adding gradients, provide depth with modern aesthetics when creating the layout of site.</p>
+                        <strong>What I've learnt:</strong>
+                        <ul>
+                            <li>Must have two or more colors within an element to create a color gradient.</li>
+                            <li>There are three types of color gradients: 
+                                <ul>
+                                <li>Linear gradients</li>
+                                <li>Radial gradients</li>
+                                <li>Conic gradients</li>
+                                </ul>
+                            </li>
+                            <li>Using gradient combinations to enhance design of site.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Example 4 -->
+                <div class="code-card">
+                    <h3>Universal/Global Selector (*)</h3>
+                    <div class="code-container">
+                        <pre><code>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}</code></pre>
+                    </div>
+                    <div class="code-explanation">
+                        <p><strong>Purpose:</strong> Ensure all elements of the site being styled globally within a specific context.</p>
+                        <p><strong>Rationale:</strong> By having global selector or targeting to descendant of an element, standard of layout of site is cleaner and easy for debugging.</p>
+                        <strong>What I've learnt:</strong>
+                        <ul>
+                            <li>Universal Selector (*) selects all elements of any type</li>
+                            <li>It can also select all elements inside another element</li>
+                            <li>Selectors can be used with namespace (ns)
+                                <ul>
+                                    <li>ns|* - selects all elements declared in namespace</li>
+                                    <li>*|* - selects all elements</li>
+                                    <li>|* - selects all elements without namespace declared.</li>
+                                </ul>
+                            </li>
+                            <li>Using global selectors styles makes bug-fixing easier.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Example 5 -->
+                <div class="code-card">
+                    <h3>Responsive Navigation</h3>
+                    <div class="code-container">
+                        <pre><code>@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .nav-link {
+        padding: 1rem 1.5rem;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+    @media (max-width: 480px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}</code></pre>
+                    </div>
+                    <div class="code-explanation">
+                        <p><strong>Purpose:</strong> To display and provide appropriate content layout and navigation tool for different devices' screen size.</p>
+                        <p><strong>Rationale:</strong> By catering different devices' screen size, makes user have a better online experience.</p>
+                        <strong>What I've learnt:</strong>
+                        <ul>
+                            <li>Media Queries is a effective technique to deliver a tailored stylesheet to different devices</li>
+                            <li>Media Queries can varied different layouts with different number of columns for different viewports, looking for the max-width.</li>
+                            <li>Specifying different screen sizes and navigation habits, improve loading time of contents navigations throughout the site.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Example 6 -->
+                <div class="code-card">
+                    <h3>CSS Hover Pseudo Class</h3>
+                    <div class="code-container">
+                        <pre><code>.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.footer-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+</code></pre>
+                    </div>
+                    <div class="code-explanation">
+                        <p><strong>Purpose:</strong> To provide user with a feedback after each interaction.</p>
+                        <p><strong>Rationale:</strong> By giving visual feedback to keep user informed, improve user engagement to the site.</p>
+                        <strong>What I've learnt:</strong>
+                        <ul>
+                            <li>The :hover pseudo class must come after :link and :visited in order to work.</li>
+                            <li>:hover pseudo class can apply to all elements, not only on links.</li>
+                            <li>With :hover pseudo class, using visual cues at appropriate moments, improves user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="challenges-section">
+            <div class="section-header">
+                <h2>Challenges & Solutions</h2>
+                <p>Problems I encountered along the way and how I solved them</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <h3>Challenge: Combining 3 CSS stylesheets into 1 CSS stylesheet</h3>
+                    <div class="challenge-content">
+                        <p><strong>Problem:</strong> Initially, I used three stylesheets and it was difficult for me to merge them into one stylesheet.</p>
+                        <p><strong>Solution:</strong> I used Deepseek to find a way for me combine my three stylesheets and showed me on where the changes are made.</p>
+                        <p><strong>Learning:</strong> Even if I want to create multiple pages of the site, I should try to use one CSS stylesheet for the entire site.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GenAI Assistance Section -->
+        <section class="ai-section">
+            <div class="section-header">
+                <h2>GenAI Assistance</h2>
+                <p>How AI tools helped in my learning journey</p>
+            </div>
+
+            <div class="ai-card">
+                <h3>AI Assistance in This Project</h3>
+                <div class="ai-content">
+                    <div class="ai-help">
+                        <h4>How AI suggest:</h4>
+                        <ul>
+                            <li>Generated portfolio website and responsive navigation structure templates</li>
+                            <li>Explained complex CSS flexbox and grid concepts</li>
+                            <li>Generated color scheme combinations and gradients</li>
+                            <li>Provided code organization for my HTML code and CSS stylesheet</li>
+                        </ul>
+                    </div>
+                    <div class="ai-contribution">
+                        <h4>My Contribution:</h4>
+                        <p>I modified AI-generated templates of three HTML codes and one CSS stylesheet to fit my design preferences, implemented the actual content to ensure all code meets project requirements and tested the site to check on my changes made. I used AI as a learning tool and reference to understand concepts better rather than just copying code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zach Ng. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+    </footer>
+</body>
+</html>
